@@ -12,6 +12,9 @@ $font-family-base: 'Roboto', sans-serif;
 @import "main/images";
 @import "main/typography";
 
+// Import patterns.html styling
+@import "patterns";
+
 // Bootstrap Starter Template Styles
 body {
   padding-top: 50px;
