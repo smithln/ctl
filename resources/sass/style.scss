@@ -6,6 +6,12 @@ $font-family-base: 'Roboto', sans-serif;
 @import "bootstrap";
 @import "font-awesome";
 
+// Import Partials
+@import "helpers/variables";
+
+@import "main/images";
+@import "main/typography";
+
 // Bootstrap Starter Template Styles
 body {
   padding-top: 50px;
@@ -13,4 +19,8 @@ body {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+
+  h1 {
+    color: $red;
+  }
 }
