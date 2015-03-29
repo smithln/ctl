@@ -1,0 +1,16 @@
+// Add custom font
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,900);
+$font-family-base: 'Roboto', sans-serif;
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+// Bootstrap Starter Template Styles
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
