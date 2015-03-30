@@ -1,6 +1,7 @@
 // Import Fonts
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,900);
 $font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
 
 // Import bootstrap and fontawesome
 @import "bootstrap";
@@ -24,6 +25,6 @@ body {
   text-align: center;
 
   h1 {
-    color: $red;
+    color: $brand-primary;
   }
 }
