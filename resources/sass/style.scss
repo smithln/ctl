@@ -15,6 +15,9 @@ $font-size-base: 16px;
 @import "main/images";
 @import "main/typography";
 
+@import "components/forms";
+@import "components/message";
+
 // Import patterns.html styling
 @import "patterns";
 

@@ -1,0 +1,36 @@
+// message styling will go here
+
+.message {
+  background-color: #3d5664;
+  border: 1px solid darken(#3d5664, 10%);
+  border-radius: 3px;
+  margin-bottom: 24px;
+  padding: 18px 24px;
+  position: relative;
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    color: $off-white;
+    max-width: 85%;
+
+    span {
+      color: $white;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    color: lighten(#3d5664, 10%);
+    padding: 0;
+    position: absolute;
+    right: 24px;
+    top: 10px;
+  }
+
+  button:hover {
+    color: lighten($brand-primary, 20%);
+  }
+}

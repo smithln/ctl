@@ -1,15 +1,5 @@
 // typography styling will go here
 
-// headings: h1-h6
-// paragraph text
-// links
-// blockquote
-// pull quote
-// citation
-// OL
-// UL
-// code?
-
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: $weight-bold;
 }
@@ -86,6 +76,7 @@ q {
     font-family: $font-family-decor;
     font-size: $large-font-size;
     font-weight: $weight-normal;
+    letter-spacing: .3rem;
     text-align: center;
     text-transform: uppercase;
     width: 100%;

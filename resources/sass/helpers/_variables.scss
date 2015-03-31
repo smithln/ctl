@@ -7,11 +7,13 @@
 $brand-primary: #ed1a34;
 $brand-gray: #A9A9A9;
 
-$light-gray: lighten($brand-gray, 10%);
-$dark-gray: darken($brand-gray, 10%);
+$light-gray: lighten($brand-gray, 20%);
+$dark-gray: darken($brand-gray, 20%);
 
 // black is a little lighter than true black
 $black: #222;
+$white: #ffffff;
+$off-white: #fefefe;
 
 $blue: #13B7FF;
 

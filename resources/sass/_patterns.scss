@@ -10,13 +10,14 @@
     margin-bottom: 50px;
     padding-bottom: 50px;
 
-    &.typography {
-      border-bottom: 0;
-      padding-bottom: 0;
-
+    &.typography, &.components {
       h4 {
         padding-bottom: 16px
       }
+    }
+
+    &.typography:last-of-type, &.components:last-of-type {
+      border-bottom: 1px solid #eaeaea;
     }
   }
 
@@ -28,6 +29,8 @@
     padding-top: 40px;
   }
 
+  //////////////////////////////////////////
+  // Main Elements /////////////////////////
   //////////////////////////////////////////
 
   .color-block {
@@ -107,6 +110,14 @@
       font-size: $large-font-size;
       font-weight: $weight-black;
     }
+  }
+
+  //////////////////////////////////////////
+  // Components ////////////////////////////
+  //////////////////////////////////////////
+
+  .button-group {
+    padding-bottom: 20px;
   }
 
 }
