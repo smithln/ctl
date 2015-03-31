@@ -58,10 +58,31 @@
         </div>
       </div>
 
+      <h3>Font Families</h3>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 font--roboto">
+          <span>Roboto</span>
+          <p>Should be used as the base body copy, and some headings</p>
+          <code>$font-family-base</code>
+        </div>
+        <div class="col-xs-12 col-md-6 font--oswald">
+          <span>Oswald</span>
+          <p>Should be used for smaller headings, like section identifiers</p>
+          <code>$font-family-decor</code>
+        </div>
+        <div class="col-xs-12 example-pairing">
+          <span>This is an example</span>
+          <p>Of how these fonts should be paired</p>
+          <code>$weight-light, $weight-black</code>
+        </div>
+      </div>
+
       <h3>Headings</h3>
 
       <div class="row">
         <div class="col-xs-12 headings">
+          <p>Heading styles can be attributed to other elements by adding a <code>.h#</code> class.</p>
           <span>hero heading</span>
           <h1>h1. heading</h1>
           <h2>h2. heading</h2>
@@ -80,26 +101,6 @@
             <mark>willing to listen</mark> and you <em>text in your personal life</em>,
             you have what it takes to be a great Crisis Text Line Volunteer.</p>
           <p>This is a <a href="#">link</a>, this is a <a class="secondary" href="#">secondary link.</a></p>
-        </div>
-      </div>
-
-      <h3>Font Families</h3>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6 font--roboto">
-          <span>Roboto</span>
-          <p>Should be used as the base body copy, and some headings</p>
-          <code>$font-family-base</code>
-        </div>
-        <div class="col-xs-12 col-md-6 font--oswald">
-          <span>Oswald</span>
-          <p>Should be used for smaller headings, like section identifiers</p>
-          <code>$font-family-decor</code>
-        </div>
-        <div class="col-xs-12 example-pairing">
-          <span>This is an example</span>
-          <p>Of how these fonts should be paired</p>
-          <code>$weight-light, $weight-black</code>
         </div>
       </div>
 
@@ -138,8 +139,36 @@
               <li>List Item 2</li>
               <li>List Item 3</li>
             </ol>
+            <p>Example with a heading style applied:</p>
+            <ol class="h3">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ol>
+            <code>.h3</code>
           </div>
         </div>
+
+        <div class="row typography">
+          <div class='col-xs-12 typography__ul'>
+            <h4>Unordered Lists</h4>
+            <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ul>
+
+            <p>Example with added styling for li:</p>
+            <ul class="styled">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ul>
+            <code>.styled</code>
+          </div>
+        </div>
+
+        <h2 class="section-header--h2">Components</h2>
 
       </div>
 
