@@ -41,3 +41,38 @@ h6 {
 code, kbd, pre, samp {
   font-family: $font-family-monospace;
 }
+
+p {
+  color: $black;
+  font-size: $base-font-size;
+}
+
+mark {
+  background-color: #F6FF71;
+}
+
+a {
+  color: $brand-primary;
+
+  &.secondary {
+    color: $brand-gray;
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 16px;
+  border-left: 5px solid $brand-primary;
+
+  p {
+    color: #999;
+  }
+}
+
+cite {
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  font-style: normal;
+}
