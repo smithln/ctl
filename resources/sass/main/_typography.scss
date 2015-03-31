@@ -60,6 +60,14 @@ a {
   }
 }
 
+cite {
+  color: $black;
+  font-weight: $weight-medium;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
 blockquote {
   padding: 11px 22px;
   margin: 0 0 22px;
@@ -71,8 +79,60 @@ blockquote {
   }
 }
 
-cite {
-  font-weight: $weight-bold;
-  text-transform: uppercase;
-  font-style: normal;
+q {
+  &.pull-quote {
+    color: $dark-gray;
+    display: block;
+    font-family: $font-family-decor;
+    font-size: $large-font-size;
+    font-weight: $weight-normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:before {
+      color: $brand-primary;
+      content: "\f10d";
+      display: block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    &:after {
+      color: $brand-primary;
+      content: "\f10e";
+      display: block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+  }
+}
+
+ol {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+
+  > li {
+    line-height: 2rem;
+    list-style: none;
+    margin: 0 0 (20px) 2em;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  > li:before {
+    border-right: 2px solid $brand-gray;
+    box-sizing: border-box;
+    color: $brand-primary;
+    content: counter(li);
+    counter-increment: li;
+    font-size: $small-font-size;
+    font-weight: $weight-black;
+    left: -2em;
+    padding: 0 12px;
+    position: absolute;
+  }
 }
