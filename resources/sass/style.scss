@@ -1,35 +1,8 @@
-// Import Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,900);
-$font-family-base: 'Roboto', sans-serif;
-$font-size-base: 16px;
+// This only serves as the attachment point for SASS to compile to CSS.
+// No actual CSS should be here - just importing from all the imports.
 
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+// Import everything we are importing
+@import "imports";
 
-// Import bootstrap and fontawesome
-@import "bootstrap";
-@import "font-awesome";
-
-// Import Partials
-@import "helpers/variables";
-
-@import "main/images";
-@import "main/typography";
-
-@import "components/forms";
-@import "components/message";
-
-// Import patterns.html styling
-@import "patterns";
-
-// Bootstrap Starter Template Styles
-body {
-  padding-top: 50px;
-}
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-
-  h1 {
-    color: $brand-primary;
-  }
-}
+// Import general CSS that should live in this base file.
+@import "general";
