@@ -61,6 +61,14 @@ button {
       outline: none;
     }
   }
+
+  select {
+    border: 1px solid gainsboro;
+    padding: 7px;
+    option {
+      padding: 7px;
+    }
+  }
 }
 
 .checkbox, .radio {
