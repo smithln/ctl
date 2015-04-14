@@ -130,15 +130,22 @@ body {
   .titles {
     h1 {
       color: $dark-gray;
+    }
+    &:after {
+      border-top: 10px solid $brand-primary;
+      content: ' ';
+      color: #fff;
+      display: block;
+      margin: 20px 0;
+      width: 10%;
+    }
 
-      &:after {
-        border-top: 10px solid $brand-primary;
-        content: ' ';
-        color: #fff;
-        display: block;
-        margin: 20px 0;
-        width: 10%;
-      }
+    .page__subtitle {
+      color: #A5A5A5;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: $weight-normal;
+      line-height: 25px;
     }
   }
 
@@ -168,7 +175,7 @@ body {
 // Quiz Page
 ////////////////////////////////////////////////////////////////////////////////
 
-.template--quiz {
+.template--quiz__titles {
   background-color: $black;
 
   .lesson__module-name {
@@ -182,5 +189,27 @@ body {
       color: $blue;
     }
 
+  }
+}
+
+.template--quiz {
+
+  .lesson__module-name {
+    background-color: $blue;
+    mix-blend-mode: none;
+    color: $white;
+  }
+
+  .titles {
+    &:after {
+      border-top: 10px solid $blue;
+    }
+  }
+
+  .content {
+    form {
+      margin-top: 30px;
+      margin-left: 40px;
+    }
   }
 }
