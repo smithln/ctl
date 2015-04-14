@@ -40,9 +40,31 @@ body {
     }
   }
 
+  .third {
+    float: left;
+    width: 32%;
+    margin: 0 auto;
+    padding-right: 1%;
+    text-align: center;
+
+    img {
+      padding-bottom: 20px;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
   .half--centered {
     width: 50%;
     margin: 0 auto;
+  }
+
+  .full-width {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
   }
 }
 
@@ -158,10 +180,13 @@ body {
     color: $brand-primary;
   }
 
+  q.pull-quote {
+    padding-bottom: 50px;
+  }
+
   cite {
     display: inline-block;
     text-align: center;
-    padding-top: 50px;
     width: 100%;
   }
 
@@ -176,6 +201,15 @@ body {
   }
 }
 
+.template--full-background {
+  background-image: url('http://www.placecage.com/1200/680');
+  background-size: cover;
+  background-position: center;
+}
+
+.template--full-video {
+  padding: 0;
+}
 
 // Quiz Page
 ////////////////////////////////////////////////////////////////////////////////
@@ -206,6 +240,10 @@ body {
   }
 
   .titles {
+    .quiz__title {
+      font-size: $large-font-size;
+    }
+
     &:after {
       border-top: 10px solid $blue;
     }
@@ -216,5 +254,45 @@ body {
       margin-top: 30px;
       margin-left: 40px;
     }
+
+    .quiz__submit {
+      bottom: 50px;
+      left: 43%;
+      display: inline-block;
+      position: absolute;
+    }
+  }
+}
+
+.template--quiz__answer {
+  .answer-title {
+    color: $dark-gray;
+    display: inline-block;
+    font-family: $font-family-decorative;
+    font-size: 20px;
+    font-weight: $weight-light;
+    letter-spacing: .4rem;
+    padding-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .answer {
+    color: $blue;
+    display: inline-block;
+    font-size: $large-font-size;
+    font-weight: $weight-bold;
+    width: 100%;
+  }
+
+  .correct-answer {
+    color: rgb(52, 163, 52);
+  }
+
+  blockquote {
+    bottom: 20px;
+    border-left: 5px solid $blue;
+    margin-top: 50px;
+    position: absolute;
   }
 }
