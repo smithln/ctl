@@ -8,13 +8,13 @@
   padding: 18px 24px;
   position: relative;
 
-  p {
+  .message-inner {
     font-size: 20px;
     margin: 0;
     color: $off-white;
     max-width: 85%;
 
-    span {
+    .message-icon {
       color: $white;
       font-size: 24px;
       margin-right: 10px;
@@ -39,10 +39,10 @@
   background-color: $brand-primary-dark;
   border: 1px solid darken($brand-primary-dark, 5%);
 
-  p {
+  .message-inner {
     color: $off-white;
 
-    span {
+    .message-icon {
       color: $white;
     }
   }
@@ -61,10 +61,10 @@
   background-color: #BAD320;
   border: 1px solid darken(#BAD320, 10%);
 
-  p {
+  .message-inner {
     color: $off-white;
 
-    span {
+    .message-icon {
       color: $white;
     }
   }
