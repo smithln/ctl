@@ -10,14 +10,17 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: $large-font-size;
+  line-height: $large-font-size;
 }
 
 h3, .h3 {
   font-size: $medium-font-size;
+  line-height: $medium-font-size;
 }
 
 h4, .h4 {
   font-size: $base-font-size;
+  line-height: $base-font-size;
 }
 
 h5, .h5 {
@@ -163,5 +166,11 @@ ul {
       padding-top: 16px;
     }
 
+  }
+
+  &.large {
+    li {
+      font-size: 20px;
+    }
   }
 }

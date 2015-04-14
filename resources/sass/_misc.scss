@@ -21,6 +21,24 @@ body {
   width: 1180px;
   padding: 40px;
   overflow: hidden;
+  position: relative;
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+  }
+
+  .half {
+    width: 48%;
+    float: left;
+
+    &:first-of-type {
+      padding-right: 2%;
+    }
+  }
 }
 
 .slide-actions {
@@ -103,6 +121,9 @@ body {
   }
 }
 
+// Internal Lesson Pages
+////////////////////////////////////////////////////////////////////////////////
+
 .template--internal-page {
   background-color: #fafafa;
 
@@ -123,5 +144,43 @@ body {
 
   h2, h3 {
     color: $brand-primary;
+  }
+
+  cite {
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .image {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .video {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+// Quiz Page
+////////////////////////////////////////////////////////////////////////////////
+
+.template--quiz {
+  background-color: $black;
+
+  .lesson__module-name {
+    background-color: $blue;
+    mix-blend-mode: none;
+    color: $white;
+  }
+
+  .titles {
+    span {
+      color: $blue;
+    }
+
   }
 }
