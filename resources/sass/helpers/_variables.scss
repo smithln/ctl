@@ -7,6 +7,8 @@
 $brand-primary: #ed1a34;
 $brand-gray: #A9A9A9;
 
+$brand-primary-dark: darken($brand-primary, 15%);
+
 $light-gray: lighten($brand-gray, 20%);
 $dark-gray: darken($brand-gray, 20%);
 

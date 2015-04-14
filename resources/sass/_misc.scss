@@ -4,11 +4,124 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
+
+.lesson__title {
+  color: #222;
+  font-size: $hero-font-size;
+  font-weight: 900;
+}
+
+// Templates
+////////////////////////////////////////////////////////////////////////////////
+
+.template--base {
+  border: 1px solid #e7e7e7;
+  color: $dark-gray;
+  height: 664px;
+  width: 1180px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.slide-actions {
+  border: 1px solid #e7e7e7;
+  background-color: #e7e7e7;
+  height: 65px;
+  width: 1180px;
+  padding: 10px;
   text-align: center;
 
-  h1 {
+  .slide-actions__btn-group {
+    span {
+      color: darken($dark-gray, 5%);
+      display: inline-block;
+      font-size: 40px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+
+      &:hover {
+        cursor: pointer;
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+.closed-caption {
+  border: 1px solid #e7e7e7;
+  border-top: 0;
+  height: 200px;
+  width: 1180px;
+  padding: 20px;
+  background-color: $white;
+}
+
+// Title Page
+////////////////////////////////////////////////////////////////////////////////
+
+.template--title-page {
+  background-color: $brand-primary;
+  text-align: center;
+
+  .lesson__module-name {
+    background-color: $brand-primary-dark;
+    color: $brand-primary;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: $weight-black;
+    font-style: italic;
+    letter-spacing: .3rem;
+  }
+
+  .titles {
+    text-align: center;
+    top: 30%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 200;
+
+    span {
+      color: $brand-primary-dark;
+      mix-blend-mode: multiply;
+      font-size: 26px;
+    }
+
+    h2.lesson__title {
+      color: $white;
+      line-height: 7rem;
+      padding: 0 20px;
+    }
+  }
+
+  img {
+    height: 400px;
+    margin-top: -115px;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.template--internal-page {
+  background-color: #fafafa;
+
+  .titles {
+    h1 {
+      color: $dark-gray;
+
+      &:after {
+        border-top: 10px solid $brand-primary;
+        content: ' ';
+        color: #fff;
+        display: block;
+        margin: 20px 0;
+        width: 10%;
+      }
+    }
+  }
+
+  h2, h3 {
     color: $brand-primary;
   }
 }

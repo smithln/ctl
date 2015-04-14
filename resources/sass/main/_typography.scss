@@ -33,8 +33,11 @@ code, kbd, pre, samp {
 }
 
 p {
-  color: $black;
   font-size: $base-font-size;
+
+  &.large {
+    font-size: 25px;
+  }
 }
 
 mark {
@@ -47,6 +50,17 @@ a {
   &.secondary {
     color: $brand-gray;
     text-decoration: underline;
+  }
+}
+
+span {
+  &.intro {
+    color: #767676;
+    font-family: Oswald,sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
   }
 }
 
