@@ -105,13 +105,15 @@ input[type=checkbox], input[type=radio] {
 }
 
 input[type=checkbox]:checked + .checkbox:before {
+  color: $dark-gray;
 	content: "\f00c";
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font: normal normal normal 12px/1.5 FontAwesome;
   vertical-align: middle;
 }
 
-input[type=radio]:checked + .checkbox:before {
+input[type=radio]:checked + .radio:before {
+  color: $dark-gray;
 	content: "\f111";
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font: normal normal normal 12px/1.5 FontAwesome;
