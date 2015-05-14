@@ -4,6 +4,8 @@
   background-color: $blue;
   border: 1px solid darken($blue, 10%);
   border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
   margin-bottom: 24px;
   padding: 18px 24px;
   position: relative;

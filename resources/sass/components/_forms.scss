@@ -5,6 +5,8 @@ button {
   background: $brand-gray;
   border: 2px solid transparent;
   border-radius: 0px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
   display: inline-block;
   font-size: $base-font-size;
   font-weight: $weight-bold;
@@ -88,6 +90,8 @@ button {
     text-align: center;
     box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
     border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
     margin-right: 3%;
   }
 }
@@ -95,12 +99,16 @@ button {
 .checkbox {
   &:before {
     border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
   }
 }
 
 .radio {
   &:before {
     border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
   }
 }
 
